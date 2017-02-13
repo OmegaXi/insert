@@ -6,7 +6,8 @@ for i in range(length):
 	num=int(input("输入一个数："))
 	numbers.append(num)
 	
-numbers.sort()
+list.sort(numbers)
+print("输入的数组为",numbers)
 
 numtoadd=int(input("要插入的数字:"))
 if numtoadd>=numbers[length-1]:
