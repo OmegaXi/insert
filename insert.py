@@ -10,17 +10,7 @@ list.sort(numbers)
 print("输入的数组为",numbers)
 
 numtoadd=int(input("要插入的数字:"))
-if numtoadd>=numbers[length-1]:
-	numbers.append(numtoadd)
-else:
-	for i in range(length-1):
-		if numtoadd<numbers[i]:
-			temp1=numbers[i]
-			numbers[i]=numtoadd
-			for j in range(i+1,length-1):
-				temp2=numbers[j]
-				numbers[j]=temp1
-				temp1=temp2
-			break
-print(numbers[0:length])
+numbers.append(numtoadd)
+list.sort(numbers)
+print(numbers)
 				
